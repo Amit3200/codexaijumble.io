@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" integrity="sha256-lJMsOpLg+Hdzs297wkRxAhSlJdXcuHHyo/JoB4uI7uw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" integrity="sha256-e22BQKCF7bb/h/4MFJ1a4lTRR2OuAe8Hxa/3tgU5Taw=" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+ <script src="index.js"></script>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background: #121212;
+    overflow: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    align-content: center;
+    text-align: center;
+    background: #121212;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    #m1
+    {
+        text-align: center;
+        align-content: center;
+    }
+
+    html, body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(#000 0%, #121212 100%);
+}
+
+.center-wrap {
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 125px);
+	width: 250px;
+	height: 200px;
+}
+
+.button {
+	position: relative;
+	display: block;
+	background: none center center no-repeat;
+	background-size: cover;
+	border: 2px solid #2e2e2e;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	padding: 20px 15px;
+	text-align: center;
+	max-width: 270px;
+	min-width: 200px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: border 1s cubic-bezier(0.19,1,.22,1),color .6s cubic-bezier(0.19,1,.22,1);
+	transition: border 1s cubic-bezier(0.19,1,.22,1), color .6s cubic-bezier(0.19,1,.22,1), background 5s cubic-bezier(0.19,1,.22,1);
+}
+
+.button a {
+	color: #969696;
+	font-family: 'Lato';
+	text-decoration: none;
+}
+
+.button .mask {
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+}
+
+.button .mask {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 100px;
+	-webkit-transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	-webkit-transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+	transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+}
+
+.button .shift {
+	-webkit-transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+	transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+}
+
+.button:hover {
+	border-color: #fff;
+	/* box-shadow: 0 0 5px rgba(255,245,245,0.8); */
+	/* background-image: url('http://cuinine.com/img/codepen/savvy.jpg'); */
+}
+
+.button:hover a {
+	color: #fff;
+}
+
+.button:hover .mask {
+	background: #fff;
+	-webkit-transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+	transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+}
+
+.button:hover .shift {
+	padding-left: 5px;
+}
+    input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+</style>
+  
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="About.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+<div id="main">
+    <h1 style="color:#fff; font-size: 4.5rem;"><b>CODEXAI</b></h1>
+  <p></p>
+  
+</div>
+<div id="m1">
+    <h2 style="color:#fff;font-size:2.5rem;">WHO ARE YOU? :&#41;</h2>
+    <center><input type="text" class="form-control" maxlength="50" placeholder="Enter Name" style="color:white;font-family:'Lato','sans-serif'; padding-left:15px;font-size:18px;" id="player" required></center>
+    <br>
+ <div class="center-wrap">
+	<div class="button" style="margin-top:200px;">
+		<a onclick="getname()" href="myworld.html">What's Inside<span class="shift">›</span></a>
+		<div class="mask"></div>
+	</div>
+         <center>    <hr style="width: 200px;"></center>
+         <center>Developed by Amit Singh</center>
+</div>
+
+    </div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
+</body>
+</html> 

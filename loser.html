@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+            body
+            {
+                background: #EB3349;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family:"Lato",sans-serif;
+                margin: 0px;
+            }
+                .button {
+	position: relative;
+	display: block;
+	background: none center center no-repeat;
+	background-size: cover;
+	border: 2px solid #2e2e2e;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	padding: 20px 15px;
+	text-align: center;
+	max-width: 270px;
+	min-width: 200px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: border 1s cubic-bezier(0.19,1,.22,1),color .6s cubic-bezier(0.19,1,.22,1);
+	transition: border 1s cubic-bezier(0.19,1,.22,1), color .6s cubic-bezier(0.19,1,.22,1), background 5s cubic-bezier(0.19,1,.22,1);
+}
+
+.button a {
+	color: #969696;
+	font-family: 'Lato';
+	text-decoration: none;
+}
+
+.button .mask {
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+}
+
+.button .mask {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 100px;
+	-webkit-transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	-webkit-transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+	transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+}
+
+.button .shift {
+	-webkit-transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+	transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+}
+
+.button:hover {
+	border-color: #fff;
+	/* box-shadow: 0 0 5px rgba(255,245,245,0.8); */
+	/* background-image: url('http://cuinine.com/img/codepen/savvy.jpg'); */
+}
+
+.button:hover a {
+	color: #fff;
+}
+
+.button:hover .mask {
+	background: #fff;
+	-webkit-transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+	transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+}
+
+.button:hover .shift {
+	padding-left: 5px;
+}
+        </style>
+    </head>
+    <body>
+        <center><h1 style="color:white;font-size:5.5rem;margin-top: 100px;">YOU LOST</h1></center>
+        <center><p style="font-family:'Century Gothic'">Don't Worry Try Again</p></center>
+        <center><hr style="width: 300px;"></center>
+        <center>
+        <div class="button" style="margin-top:50px;">
+            <a  href="index.html"><span class="shift" style="color: white;">GO!</span></a>
+		<div class="mask"></div>
+            </div></center>
+                    <center><p style="font-family: 'Century Gothic'">Developed by Amit Singh Sansoya with <i class="fa fa-heart"></i></p></center>
+    </body>
+</html>

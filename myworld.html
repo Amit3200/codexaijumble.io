@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" integrity="sha256-lJMsOpLg+Hdzs297wkRxAhSlJdXcuHHyo/JoB4uI7uw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" integrity="sha256-e22BQKCF7bb/h/4MFJ1a4lTRR2OuAe8Hxa/3tgU5Taw=" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <script src="index.js"></script>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background: #121212;
+    overflow: hidden;
+    color:white;
+}
+    .w3-animate-zoom {animation:animatezoom 2s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+</style>
+</head>
+<body>
+<div class="w3-container w3-center w3-animate-zoom" style="margin-top: 160px">
+    <h1>Hi!</h1>
+    
+    <h1 style="color:#e65c00;"><b><span class="typed" data-wow-delay="1s"></span></b></h1>
+     <div id="seconds"></div>
+    
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+<script> 
+    window.sr=ScrollReveal();
+        sr.reveal('body', {
+          duration: 4000,
+          origin:'bottom'
+        });
+</script>
+<script>
+    $(function(){
+		$(".typed").typed({
+		strings: ["I am XAI","Welcome","To","CODEXAI","LETS","HAVE","SOME","FUN"],
+		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 100,
+		// time before typing starts
+		startDelay: 600,
+		// backspacing speed
+		backSpeed: 70,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		infinite:true,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	});
+});
+    </script>
+    <script>
+        var counter = 18;
+var interval = setInterval(function() {
+    counter--;
+    // Display 'counter' wherever you want to display it.
+    document.getElementById("seconds").innerHTML=counter;
+    if (counter == 0) {
+        clearInterval(interval);
+           window.location.assign("quest.html");
+    }
+}, 1000);
+      
+    </script>
+
+</body>
+</html>
